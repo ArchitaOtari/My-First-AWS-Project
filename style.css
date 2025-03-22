@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #d0f0ff, #ffffff);
+  overflow-x: hidden;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  min-height: 100vh;
+  position: relative;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  animation: fadeInDown 1.2s ease forwards;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #34495e;
+  animation: fadeInUp 1.4s ease forwards;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 2s ease forwards;
+}
+
+p {
+  max-width: 700px;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+  animation: fadeIn 2s ease forwards;
+}
+
+.learning-journey {
+  margin: 40px 0;
+  text-align: center;
+  animation: fadeIn 2.6s ease forwards;
+}
+
+.learning-journey h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.learning-journey ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.learning-journey li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  animation: fadeIn 2.8s ease forwards;
+}
+
+.buttons a {
+  text-decoration: none;
+  background: #3498db;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+  font-weight: 600;
+}
+
+.buttons a:hover {
+  background: #2980b9;
+}
+
+.tech-stack-subtle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 0.8rem;
+  color: #555;
+  line-height: 1.4;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  text-align: left;
+  max-width: 180px;
+}
+
+.tech-stack-subtle:hover {
+  opacity: 1;
+}
+
+.tech-stack-subtle p {
+  margin: 4px 0;
+}
+
+
+footer {
+  margin-top: 50px;
+  color: #888;
+  font-size: 0.9rem;
+  animation: fadeIn 3s ease forwards;
+  text-align: center;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cloud {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  animation: floatCloud 60s linear infinite;
+  filter: blur(20px);
+}
+
+@keyframes floatCloud {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(1500px);
+  }
+}
